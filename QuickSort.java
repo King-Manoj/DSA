@@ -27,6 +27,7 @@ public class QuickSort {
 		int st = lb;
 		int en = ub-1;
 		
+		  
 		while(st<=en) {
 			
 			while(st<=en && a[st]<=pivot) {
