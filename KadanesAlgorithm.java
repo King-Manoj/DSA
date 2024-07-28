@@ -1,5 +1,11 @@
 package dsa;
-import java.lang.*;
+				//Kadane's Algorithm - Used to Solve Maximum SubArray Problem
+				//Inventor - Joseph B.Kadane
+
+				//Time Complexity - O(n)
+
+				//Space Complexity - O(1)
+
 public class KadanesAlgorithm {
 
 	public static void main(String[] args) {
@@ -14,17 +20,7 @@ public class KadanesAlgorithm {
 		int maxSum = Integer.MIN_VALUE;
 		for(int i=0;i<n;i++) {
 			sum = Math.max(sum+a[i],a[i]);
-			maxSum = Math.max(maxSum, sum);
-//			if(sum<0) {
-//				sum = a[i];
-//			}
-//			else {
-//				sum+=a[i];
-//			}
-//			
-//			if(maxSum<sum) {
-//				maxSum = sum;
-//			}
+			maxSum = Math.max(maxSum, sum);			 
 		}
 		return maxSum;
 	}
