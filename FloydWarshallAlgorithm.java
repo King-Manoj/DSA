@@ -1,5 +1,9 @@
 package dsa;
 
+							//Inventor -  Robert W.Floyd and Stephen Warshall 
+							//Time Complexity - O(n^3)
+							//Space Complexity - O(n^2)
+
 public class FloydWarshallAlgorithm {
 
 	public static void main(String[] args) {
@@ -43,11 +47,15 @@ public class FloydWarshallAlgorithm {
 			}
 		}
 		
-		 for(int[] edge : edges) {
-			 dist[edge[0]][edge[1]] = edge[2];
-			 dist[edge[1]][edge[0]] = edge[2];
-		 }
-		
+		// Calculate the initial distances based on edges
+        for (int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            int w = edge[2];
+            dist[u][v] = w;
+        }
+        
+        //Floyd Warshall Algorithm
 		for(int k=0;k<n;k++) {
 			for(int i=0;i<n;i++) {
 				for(int j=0;j<n;j++) {
