@@ -16,7 +16,6 @@ public class SelectionSort {
 		for(int i : a) {
 			System.out.print(i + " ");
 		}
-
 	}
 	public static void selectionSort(int [] a) {
 		int n = a.length;
@@ -34,5 +33,4 @@ public class SelectionSort {
 		 a[i] = a[j];
 		 a[j] = temp;
 	}
-
 }
