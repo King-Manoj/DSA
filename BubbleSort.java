@@ -1,4 +1,10 @@
 package dsa;
+				
+				//Inventor - John von Neumann
+				//Time Complexity 
+					//Best Case - O(n)
+					//Worst Case - O(n^2)
+				//Space Complexity - O(1)
 
 public class BubbleSort {
 
@@ -19,7 +25,7 @@ public class BubbleSort {
 		
 		for(int i=1;i<n;i++) {
 			boolean swapped = false;
-			for(int j=0;j<n-1;j++) {
+			for(int j=0;j<n-i;j++) {
 				if(a[j]>a[j+1]) {
 					swap(a,j,j+1);
 					swapped = true;
