@@ -62,7 +62,7 @@ public class QuickSort {
 		// calling the quickSort to sort the array from 0th index to the n-1th index
 		quickSort(a, 0, n-1);
 		
-		//Printing the array
+		//Printing the array 
 		for(int i : a) {
 			System.out.print(i + " ");
 		}
