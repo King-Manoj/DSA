@@ -22,7 +22,6 @@ public class BubbleSort {
 	
 	public static void bubbleSort(int[] a) {
 		int n = a.length;
-		
 		for(int i=1;i<n;i++) {
 			boolean swapped = false;
 			for(int j=0;j<n-i;j++) {
@@ -42,5 +41,4 @@ public class BubbleSort {
 		 a[i] = a[j];
 		 a[j] = temp;
 	}
-
 }
