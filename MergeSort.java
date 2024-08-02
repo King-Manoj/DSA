@@ -1,5 +1,13 @@
 package dsa;
 
+				//Merge Sort - Divide and Conquer
+				// Inventor -  John Von Neumann
+				//Time Complexity 
+					//Worst Case - O(n log n)
+				//Space Complexity 
+					//Worst Case -	O(n)
+
+
 import java.util.Arrays;
 
 public class MergeSort {
@@ -37,15 +45,12 @@ public class MergeSort {
 				join[k++] = b[j++];
 			}
 		}
-		
 		while(i<alen) {
 			join[k++] = a[i++];
 		}
 		while(j<blen) {
 			join[k++] = b[j++];
 		}
-		
 		return join;
 	}
-
 }
